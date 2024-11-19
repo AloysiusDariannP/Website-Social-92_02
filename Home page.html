@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Sosial</title>
+  <style>
+    /* Mengatur background color untuk seluruh halaman */
+    body {
+      background-color: lightblue; /* Warna latar belakang biru muda */
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar (menu navigasi di atas) */
+    .navbar {
+      background-color: #333; /* Warna latar navbar hitam */
+      overflow: hidden;
+      position: fixed; /* Navbar tetap di atas saat scroll */
+      top: 0;
+      width: 100%; /* Lebar navbar penuh */
+      z-index: 1000; /* Supaya navbar tetap di atas konten lain */
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* Kontainer carousel */
+    .carousel-container {
+      position: relative;
+      width: 80%; /* Lebar carousel 80% dari halaman */
+      height: 300px; /* Tinggi carousel lebih kecil */
+      margin: 20px auto; /* Margin auto untuk memposisikan di tengah */
+      overflow: hidden;
+    }
+
+    /* Gaya untuk slide dalam carousel */
+    .carousel {
+      display: flex;
+      transition: transform 0.5s ease-in-out; /* Efek transisi saat slide bergerak */
+    }
+
+    .carousel-slide {
+      min-width: 100%;   /* Setiap slide mengisi 100% kontainer */
+      min-height: 40%;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .carousel-slide img {
+      width: 100%; /* Gambar mengisi penuh slide */
+      height: 40%;
+      object-fit: cover; /* Menutupi seluruh area tanpa distorsi */
+    }
+
+    /* Tombol Previous dan Next untuk carousel */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    /* Style untuk setiap section (bagian halaman) */
+    .section {
+      padding: 100px 20px;
+    }
+
+    /* Section Home */
+    #home {
+      background-image: url('Inf tugas sosial.jfif');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center; /* Mengatur teks agar berada di tengah */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100vh; /* Tinggi penuh untuk memenuhi layar */
+    }
+
+    /* Section Sosial */
+    #social {
+      background-size: cover;
+      background-position: center;
+      background-color: blue;
+      color: white;
+      text-align: center; /* Teks center */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: auto; /* Tinggi otomatis */
+      padding: 50px 20px; /* Padding untuk section sosial */
+    }
+
+    /* Ukuran section About Us dan Contact lebih kecil */
+    #about{
+      background-size: cover;
+      background-position: center;
+      background-color: red ;
+      color: white;
+      padding: 50px 20px; /* Padding lebih kecil */
+      max-width: 2000px; /* Lebar maksimal dikurangi */
+      margin: auto;
+    }
+
+    #contact {
+      background-size: cover;
+      background-position: center;
+      background-color: blue;
+      color: white;
+      padding: 50px 20px; /* Padding lebih kecil */
+      max-width: 2000px; /* Lebar maksimal dikurangi */
+      margin: auto; /* Agar berada di tengah */
+    }
+
+
+    /* Footer */
+    footer {
+      background-color: orange;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    /* Gaya untuk halaman berita */
+    .news-page {
+      background-color: orangered;
+      color: black;
+      padding: auto;
+      text-align: center;
+      margin: auto;
+      max-width: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .news-article {
+      text-align: left;
+      margin-bottom: 30px;
+    }
+
+    .news-article h3 {
+      color: blue;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar (Menu navigasi di bagian atas) -->
+  <div class="navbar" id="navbar">
+    <a href="index.html">Home</a>
+    <a href="Home page.html">Pengertian</a>
+    <a href="Berita.html">Berita</a>
+  </div>
+ <!-- Section Sosial -->
+ <div id="social" class="section" style="background-color: blue;">
+    <h2>Sosial</h2>
+    <p style="text-align: justify;">Manusia dikenal sebagai makhluk sosial sebab kehidupannya selalu berkaitan dengan masyarakat dan individu yang lainnya. Sifat sosial adalah suatu implikasi dari hubungan interaksi dengan lingkungan yang memiliki latar belakang berbeda-beda. Ilmu sosial bahkan turut membahas mengenai ilmu tentang perilaku kehidupan manusia sebagai makhluk sosial dan makhluk hidup yang bermasyarakat</p> <br> <p style="text-align: justify;">Setiap individu manusia diharuskan melakukan interaksi dalam kehidupannya. Hubungan antar individu tersebut mencakup antara anggota keluarga, tetangga, rekan kerja, teman dan orang-orang asing berada di sekitar lingkungan sosialnya.</p> <br> <p style="text-align: justify;">Persentase penduduk miskin pada Maret 2024 sebesar 9,03 persen, menurun 0,33 persen poin terhadap Maret 2023 dan menurun 0,54 persen poin terhadap September 2022. Jumlah penduduk miskin pada Maret 2024 sebesar 25,22 juta orang, menurun 0,68 juta orang terhadap Maret 2023 dan menurun 1,14 juta orang terhadap September 2022.</p> <br> <p style="text-align: justify;">Penyebab kemiskinan dapat terjadi karena kondisi alamiah dan ekonomi, kondisi struktural dan sosial, serta kondisi kultural (budaya). Kemiskinan alamiah dan ekonomi timbul akibat keterbatasan sumber daya alam, manusia, dan sumberdaya lain sehingga peluang produksi relatif kecil dan tidak dapat berperan dalam pembangunan. Kemiskinan struktural dan sosial disebabkan hasil pembangunan yang belum merata, tatanan kelembagaan dan kebijakan dalam pembangunan. Sedangkan kemiskinan kultural (budaya) disebabkan sikap atau kebiasaan hidup yang merasa kecukupan sehingga menjebak seseorang dalam kemiskinan.</p>
+  </div>
+     <!-- Footer -->
+     <footer style="background-color: orange; color: white; padding: 20px 0; text-align: center;">
+      <p>&copy; 2024 Aloysius Dariann. Canisius College.</p>
+    </footer>
+  </html>

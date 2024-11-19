@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Sosial</title>
+  <style>
+    /* Mengatur background color untuk seluruh halaman */
+    body {
+      background-color: lightblue; /* Warna latar belakang biru muda */
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar (menu navigasi di atas) */
+    .navbar {
+      background-color: #333; /* Warna latar navbar hitam */
+      overflow: hidden;
+      position: fixed; /* Navbar tetap di atas saat scroll */
+      top: 0;
+      width: 100%; /* Lebar navbar penuh */
+      z-index: 1000; /* Supaya navbar tetap di atas konten lain */
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* Kontainer carousel */
+    .carousel-container {
+      position: relative;
+      width: 80%; /* Lebar carousel 80% dari halaman */
+      height: 300px; /* Tinggi carousel lebih kecil */
+      margin: 20px auto; /* Margin auto untuk memposisikan di tengah */
+      overflow: hidden;
+    }
+
+    /* Gaya untuk slide dalam carousel */
+    .carousel {
+      display: flex;
+      transition: transform 0.5s ease-in-out; /* Efek transisi saat slide bergerak */
+    }
+
+    .carousel-slide {
+      min-width: 100%;   /* Setiap slide mengisi 100% kontainer */
+      min-height: 40%;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .carousel-slide img {
+      width: 100%; /* Gambar mengisi penuh slide */
+      height: 40%;
+      object-fit: cover; /* Menutupi seluruh area tanpa distorsi */
+    }
+
+    /* Tombol Previous dan Next untuk carousel */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    /* Style untuk setiap section (bagian halaman) */
+    .section {
+      padding: 100px 20px;
+    }
+
+    /* Section Home */
+    #home {
+      background-image: url('Inf tugas sosial.jfif');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center; /* Mengatur teks agar berada di tengah */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100vh; /* Tinggi penuh untuk memenuhi layar */
+    }
+
+    /* Section Sosial */
+    #social {
+      background-size: cover;
+      background-position: center;
+      background-color: blue;
+      color: white;
+      text-align: center; /* Teks center */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: auto; /* Tinggi otomatis */
+      padding: 50px 20px; /* Padding untuk section sosial */
+    }
+
+    /* Ukuran section About Us dan Contact lebih kecil */
+    #about{
+      background-size: cover;
+      background-position: center;
+      background-color: red ;
+      color: white;
+      padding: 50px 20px; /* Padding lebih kecil */
+      max-width: 2000px; /* Lebar maksimal dikurangi */
+      margin: auto;
+    }
+
+    #contact {
+      background-size: cover;
+      background-position: center;
+      background-color: blue;
+      color: white;
+      padding: 50px 20px; /* Padding lebih kecil */
+      max-width: 2000px; /* Lebar maksimal dikurangi */
+      margin: auto; /* Agar berada di tengah */
+    }
+
+
+    /* Footer */
+    footer {
+      background-color: orange;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    /* Gaya untuk halaman berita */
+    .news-page {
+      background-color: orangered;
+      color: black;
+      padding: auto;
+      text-align: center;
+      margin: auto;
+      max-width: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .news-article {
+      text-align: left;
+      margin-bottom: 30px;
+    }
+
+    .news-article h3 {
+      color: blue;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar (Menu navigasi di bagian atas) -->
+  <div class="navbar" id="navbar">
+    <a href="index.html">Home</a>
+    <a href="Home page.html">Pengertian</a>
+    <a href="Berita.html">Berita</a>
+  </div>
+  </div>
+ <!-- Kolom berita berada di bawah sosial -->
+ <div class="news-page">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+    body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+    </style>
+    </head>
+    <body class="w3-light-grey">
+     <div class="w3-content" style="max-width:1400px">
+    
+    <!-- Judul berita -->
+    <header class="w3-container w3-center w3-padding-32"> 
+      <h1><b>Berita Terkait</b></h1>
+      <p>Berita-berita yang menayangkan tentang status sosial-sosial di Indonesia!</p>
+    </header>
+    
+    <!-- Grid -->
+    <div class="w3-row">
+    
+    <!-- Blog entries -->
+    <div class="w3-col l8 s12">
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <img src="Nusantara 1.jfif" alt="Nature" style="width:100%">
+        <div class="w3-container">
+          <h3><a href="https://www.cnnindonesia.com/ekonomi/20220930123851-532-854651/ri-masuk-100-negara-paling-miskin-di-dunia" target="_blank">Berita 1: RI Masuk 100 Negara Paling Miskin di Dunia</a></h3>
+          <h5>Berita yang menggambarkan peringkat Republik Indonesia sebagai salah satu negara miskin <span class="w3-opacity">Jumat, 30 September 2022</span></h5>
+        </div>
+    
+        <div class="w3-container">
+          <p>Indonesia masuk dalam 100 negara paling miskin di dunia. Hal ini diukur dari Gross National Income (GNI) atau pendapatan nasional bruto per kapita.
+            Mengutip World Population Review, Indonesia masuk dalam urutan ke-73 negara termiskin di dunia. Pendapatan nasional bruto RI tercatat US$3.870 per kapita pada 2020.
+          <div class="w3-row">
+            <div class="w3-col m8 s12">
+              <a href="https://www.cnnindonesia.com/ekonomi/20220930123851-532-854651/ri-masuk-100-negara-paling-miskin-di-dunia" target="_blank">Baca selengkapnya</a>.</p>
+            </div>
+            <div class="w3-col m4 w3-hide-small">
+              <p><span class="w3-padding-large w3-right"><b>Comments </b> <span class="w3-tag">0</span></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+    
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+      <img src="4 growth stocks one should be looking at in July 2021.jfif" alt="Norway" style="width:100%">
+        <div class="w3-container">
+          <h3><a href="https://jdih.sukoharjokab.go.id/berita/detail/kemiskinan-di-indonesia-yang-tak-kunjung-usai" target="_blank">Berita 2: Kemiskinan di Indonesia yang Tak Kunjung Usai</a></h3>
+          <h5>Berita yang membahas keresahan rakyat dan kemiskinan yang tak kunjung usai <span class="w3-opacity">7, Mei 2019</span></h5>
+        </div>
+    
+        <div class="w3-container">
+          <p> Indonesia merupakan negara besar yang sedang berkembang sehingga banyak masalah masalah yang harus dihadapi oleh bangsa indonesia, salah satunya yaitu kemiskinan. Apa itu kemiskinan? Kemiskinan adalah suatu keadaan dimana seseorang tidak mampu untuk memenuhi kebutuhan hidupnya dalam aspek pangan, sandang/pakaian, tempat tinggal, dan pendidikan.</p>
+          <div class="w3-row">
+            <div class="w3-col m8 s12">
+              <a href="https://jdih.sukoharjokab.go.id/berita/detail/kemiskinan-di-indonesia-yang-tak-kunjung-usai" target="_blank">Baca selengkapnya</a>.</p>
+            </div>
+            <div class="w3-col m4 w3-hide-small">
+              <p><span class="w3-padding-large w3-right"><b>Comments </b> <span class="w3-badge">2</span></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- END BLOG ENTRIES -->
+    </div>
+    
+    <!-- Introduction menu -->
+    <div class="w3-col l4">
+      <!-- About Card -->
+      <div class="w3-card w3-margin w3-margin-top">
+      <img src="WhatsApp Image 2024-10-10 at 11.02.24 PM.jpeg" style="width:100%">
+        <div class="w3-container w3-white">
+          <h4><b>Identitas pembuat Website</b></h4>
+          <p>Halo semua nama saya Aloysius Dariann Prasetyanto. Saya lahir pada 28 Mei 2010 dan bersekolah di Canisius College. Saya sekarang duduk di bangku SMP kelas 9</p>
+        </div>
+      </div><hr>
+      
+      <!-- Posts -->
+      <div class="w3-card w3-margin">
+        <div class="w3-container w3-padding">
+          <h4>Berita populer terkini</h4>
+        </div>
+        <ul class="w3-ul w3-hoverable w3-white">
+          <li class="w3-padding-16">
+            <img src="Screenshot 2024-11-19 131444.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large"><a href="https://regional.kompas.com/read/2024/11/19/122441278/mensos-gus-ipul-ditodong-warga-bengkulu-soal-jalan-tak-beraspal-25-tahun">Mensos Gus Ipul "Ditodong" Warga Bengkulu soal Jalan Tak Beraspal 25 Tahun</a></span><br>
+          </li>
+          <li class="w3-padding-16">
+            <img src="Screenshot 2024-11-19 131800.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large"><a href="https://lifestyle.kompas.com/read/2024/11/19/121100020/hati-hati-tak-semua-konten-kesehatan-mental-di-media-sosial-dari-sumber">Hati-hati, Tak Semua Konten Kesehatan Mental di Media Sosial dari Sumber Terpercaya</a></span><br>
+          </li> 
+        </ul>
+      </div>
+      <hr> 
+      
+    <!-- END Introduction Menu -->
+    </div>
+    
+    <!-- END GRID -->
+    </div><br>
+    
+    <!-- END w3-content -->
+    </div>
+    
+  
+  
+    <!-- Section About Us -->
+    <div id="about" class="section">
+      <h2 style="text-align: center;">About Us</h2>
+      <p>Di website ini, saya akan membahas seputaran tentang kehidupan "lain" yang tidak "terlihat" di Indonesia. Seperti orang-orang yang tertindas/tersingkir karena kekuatan ekonomi mereka yang tidak mampu</p>
+    </div>
+  
+    <!-- Section Contact -->
+    <div id="contact" class="section">
+      <h2 style="text-align: center;">Contact</h2>
+      <p>Email : dariannprasetyanto88@gmail.com <br>
+         Sekolah : Canisius College Jakarta <br>
+         Umur : 14 Tahun
+      </p>
+    </div>
+  
+    <!-- Footer -->
+    <footer style="background-color: orange; color: white; padding: 20px 0; text-align: center;">
+      <p>&copy; 2024 Aloysius Dariann. Canisius College.</p>
+    </footer>
+  
+    <!-- Script untuk Carousel -->
+    <script>
+      let currentIndex = 0;
+      
+      // Fungsi untuk menampilkan slide sesuai index
+      function showSlide(index) {
+        const carousel = document.querySelector('.carousel');
+        const slides = document.querySelectorAll('.carousel-slide');
+        if (index >= slides.length) {
+          currentIndex = 0;
+        } else if (index < 0) {
+          currentIndex = slides.length - 1;
+        } else {
+          currentIndex = index;
+        }
+        const offset = -currentIndex * 100; /* Menggeser slide ke kiri atau kanan */
+        carousel.style.transform = `translateX(${offset}%)`;
+      }
+  
+      function nextSlide() {
+        showSlide(currentIndex + 1);
+      }
+  
+      function prevSlide() {
+        showSlide(currentIndex - 1);
+      }
+  
+      // Carousel otomatis bergerak setiap 3 detik
+      setInterval(() => {
+        nextSlide();
+      }, 3000);
+    </script>
+  
+  </body>
+  </html>
